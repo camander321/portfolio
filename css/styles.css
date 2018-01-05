@@ -21,31 +21,40 @@ h1 {
   z-index: 1;
 }
 
-#content {
-  padding-top: 150px;
+.content {
+  padding-top: 120px;
   z-index: 0;
+  height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-  h1 {
-    background-size: cover;
-    position: inherit;
-  }
-
-  #content {
-    padding-top: 0px;
-  }
+.side-panel-wrapper {
+  float: left;
+  width: 160px;
+  position: absolute;
+  z-index: 0;
+  list-style: georgian;
 }
 
+.center-wrapper {
+  padding-left: 160px;
+}
 
-.panel-info {
+.section-header {
+  margin: 15px;
+  text-align: center;
+  background-color: #cccccc;
+  margin-top: 30px;
+}
+
+.project-panel {
   margin-right: 40px;
 }
 
-.panel-body {
+.project-body {
   min-height: 10em;
   max-height: 10em;
   overflow-y: scroll;
+
 }
 
 .panel-title {
@@ -57,6 +66,7 @@ h1 {
   background-color: gray;
   padding: 5px;
   margin: 10px;
+  margin-top: 0px;
 }
 
 #footer {
@@ -68,4 +78,17 @@ h1 {
   font-size: 0.8em;
   text-align: center;
   line-height: 0.8em;
+  position: relative;
+  z-index: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  h1 {
+    background-size: cover;
+    position: inherit;
+  }
+
+  .content {
+    padding-top: 0px;
+  }
 }
