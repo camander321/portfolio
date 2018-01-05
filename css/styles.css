@@ -1,24 +1,36 @@
 body {
-  background-color: #ccddff;
+  background-color: #dddddd;
   font-family: sans-serif;
 }
 
 h1 {
-  color: blue;
+  color: white;
   font-size: 3.5em;
   text-align: center;
-  background-color: #cceeff;
-
+  background-image: url("../images/header-bg.jpeg");
+  background-repeat: repeat-x;
   padding: 25px;
   margin: 0px;
   margin-bottom: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  h1 {
+    background-size: cover;
+  }
 }
 
 .panel {
   margin-right: 40px;
 }
 
+.panel-title {
+  text-align: center;
+}
+
 #personal-pic {
-  margin: 25px;
-  margin-left: 40px;
+  float: left;
+  background-color: gray;
+  padding: 5px;
+  margin: 10px;
 }
