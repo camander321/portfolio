@@ -70,6 +70,11 @@ h1 {
   width: 250px;
 }
 
+.quote {
+  color: #444488;
+  font-style: italic;
+}
+
 #footer {
   background-color: #222244;
   color: white;
