@@ -1,5 +1,6 @@
 body {
-  background-color: #ccddff
+  background-color: #ccddff;
+  font-family: sans-serif;
 }
 
 h1 {
@@ -7,14 +8,17 @@ h1 {
   font-size: 3.5em;
   text-align: center;
   background-color: #cceeff;
-  width: 100%;
 
   padding: 25px;
   margin: 0px;
-  margin: 0%;
+  margin-bottom: 25px;
+}
+
+.panel {
+  margin-right: 40px;
 }
 
 #personal-pic {
-  float: left;
   margin: 25px;
+  margin-left: 40px;
 }
