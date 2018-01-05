@@ -1,3 +1,7 @@
+html {
+  background-color: #222244;
+}
+
 body {
   background-color: #dddddd;
   font-family: sans-serif;
@@ -12,16 +16,36 @@ h1 {
   padding: 25px;
   margin: 0px;
   margin-bottom: 25px;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-@media screen and (max-width: 960px) {
+#content {
+  padding-top: 150px;
+  z-index: 0;
+}
+
+@media screen and (max-width: 1000px) {
   h1 {
     background-size: cover;
+    position: inherit;
+  }
+
+  #content {
+    padding-top: 0px;
   }
 }
 
-.panel {
+
+.panel-info {
   margin-right: 40px;
+}
+
+.panel-body {
+  min-height: 10em;
+  max-height: 10em;
+  overflow-y: scroll;
 }
 
 .panel-title {
@@ -33,4 +57,15 @@ h1 {
   background-color: gray;
   padding: 5px;
   margin: 10px;
+}
+
+#footer {
+  background-color: #222244;
+  color: white;
+  width: 100%;
+  margin-top: 60px;
+  padding: 25px;
+  font-size: 0.8em;
+  text-align: center;
+  line-height: 0.8em;
 }
