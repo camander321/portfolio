@@ -33,6 +33,7 @@ h1 {
   position: absolute;
   z-index: 0;
   list-style: georgian;
+  font-family: sans-serif;
 }
 
 .center-wrapper {
@@ -44,9 +45,12 @@ h1 {
   text-align: center;
   background-color: #cccccc;
   margin-top: 30px;
+  font-family: cursive;
+  text-shadow: 2px 1px white;
 }
 
 .project-panel {
+  border-color: black;
   margin-right: 40px;
 }
 
@@ -57,8 +61,19 @@ h1 {
 
 }
 
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #222244;
+}
+
 .panel-title {
   text-align: center;
+  font-family: cursive;
+  color: white;
+}
+
+.project-title {
+  text-decoration: underline;
 }
 
 #personal-pic {
